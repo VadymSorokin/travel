@@ -1,0 +1,748 @@
+body {
+  font-family: "PT Serif", "Couture", "Monotype Corsiva", "Montserrat", "Quite Chocolatey";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1011px;
+  margin: 0 auto;
+}
+
+.button {
+  text-decoration: none;
+}
+
+.subtitle {
+  color: #1f1f1f;
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.travel {
+  background-image: url(../source/background_road.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  padding: 0 0 5px 0;
+}
+
+.travel__in {
+  background-image: url(../source/background_fog.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 38px 0 0 0;
+}
+
+.travel__logo-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.travel__logo {
+  display: flex;
+  color: #d03958;
+  font-family: "Quite Chocolatey";
+  font-size: 88px;
+  line-height: 132px;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+}
+
+.travel__nav-list {
+  display: flex;
+  justify-content: row;
+  padding: 34px 0 0 0;
+}
+
+.travel__button-link {
+  color: #1b1b1b;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: -0.36px;
+  padding: 11px 15px;
+  border-radius: 3px;
+}
+
+.travel__nav-list :hover .travel__button-link {
+  color: #ffffff;
+  background-color: #d03958;
+}
+
+.travel-request {
+  display: flex;
+  justify-content: space-between;
+}
+
+.travel__title {
+  color: #d03958;
+  font-family: Montserrat;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: -1.8px;
+  margin: 93px 0 0 0;
+}
+
+.travel__title :nth-child(2n) {
+  color: #1b1b1b;
+}
+
+.travel__text {
+  color: #161616;
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  padding: 0 120px 0 0;
+  margin: 47px 0 0 0;
+}
+
+.travel__request-form {
+  position: relative;
+  top: 100px;
+  font-family: "PT Serif";
+  border-radius: 3px;
+  background-color: #d03958;
+  max-width: 400px;
+  text-align: center;
+  padding: 26px 0 19px 0;
+}
+
+.travel__quote {
+  max-width: 400px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.44px;
+  margin: 0 0 31px 0;
+}
+
+.travel__input {
+  margin: 0 23px 19px 24px;
+}
+
+.travel__form {
+  width: 353px;
+  height: 57px;
+  border-radius: 3px;
+  padding: 15px 19px;
+  margin: 8px 0 0 0;
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.4px;
+  outline: 0;
+  border: none;
+}
+
+.travel__form::placeholder {
+  color: #b5b5b5;
+}
+
+.travel__submit {
+  background-color: #161616;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: -0.44px;
+  cursor: pointer;
+}
+
+.travel__checkbox {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.travel__checkbox-true {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -31px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.travel__checkbox-true:checked+.travel__checkbox-fake {
+  background-image: url(../source/check-solid.svg);
+}
+
+.travel__checkbox-fake {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  top: 5px;
+  left: -24px;
+}
+
+.travel__label {
+  padding: 0 0 0 23px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.4px;
+  margin: 24px 0 17px 0;
+}
+
+.our-services {
+  padding: 0 0 68px 0;
+}
+
+.our-services__subtitle {
+  display: flex;
+  justify-content: flex-start;
+  margin: 31px 0 96px 0;
+}
+
+.our-services__subtitle :nth-child(2n) {
+  color: #161616;
+}
+
+.our-services__subtile-text {
+  font-family: "Couture";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0 18px 0 0;
+  color: #d03958;
+}
+
+.our-services__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.our-services__card {
+  text-align: center;
+  max-width: 168px;
+}
+
+.our-services__card-logo {
+  margin: 0 0 46px 0;
+}
+
+.our-services__card-description {
+  color: #161616;
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+}
+
+.our-story {
+  background-color: #d03958;
+}
+
+.our-story__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 31px 135px 28px 3px;
+}
+
+.our-story__text {
+  color: #ffffff;
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+}
+
+.our-story__button {
+  text-decoration: none;
+  background-color: #e3d5b8;
+  color: #161616;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: -0.44px;
+  padding: 24px 76px 23px 65px;
+  margin: 0 0 0 121px;
+  min-width: 270px;
+  border-radius: 4px;
+}
+
+.pricing {
+  background-color: #e3d5b8;
+  text-align: center;
+  padding: 44px 0 0 0;
+}
+
+.pricing__title {
+  color: #1f1f1f;
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0 0 16px 0;
+}
+
+.pricing__options {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing__option {
+  background-color: #ffffff;
+  margin: 0 22px 0 0;
+  position: relative;
+  max-width: 318px;
+  padding: 29px 80px 0 81px;
+}
+
+.pricing__popular {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 90px 90px 0 0;
+  border-color: #b4a993 transparent transparent transparent;
+  top: 0;
+  left: 0;
+}
+
+.pricing_popular-tag {
+  color: #1f1f1f;
+  font-family: "PT Serif";
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18.97px;
+  letter-spacing: -0.32px;
+  display: block;
+  transform: rotate(-45deg);
+  position: relative;
+  bottom: 57px;
+  left: 17px;
+}
+
+.pricing__text {
+  color: #161616;
+  font-family: "PT Serif";
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.44px;
+}
+
+.pricing__price {
+  color: #d03958;
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: -1.2px;
+  margin: 0 0 5px 0;
+}
+
+.pricing__description {
+  color: #161616;
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  margin: 0 0 26px 0;
+}
+
+.pricing__button {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  text-decoration: none;
+  background-color: #e3d5b8;
+  color: #161616;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  letter-spacing: -0.44px;
+  width: 100%;
+  padding: 11px 0 9px 0;
+}
+
+.pricing__button:hover {
+  background-color: #d03958;
+  color: #ffffff;
+}
+
+.pricing__block {
+  margin: 0 0 12px 0;
+}
+
+.test-gal {
+  display: flex;
+  justify-content: space-between;
+  padding: 129px 0 0 0;
+}
+
+.testimonial__title {
+  text-align: center;
+}
+
+.testimonial__card {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 47px 0 0;
+  margin: 20px 0 35px 0;
+  max-width: 486px;
+  min-height: 142px;
+}
+
+.testimonial__feedback {
+  position: relative;
+  background-color: ffffff;
+  border-radius: 4px;
+  padding: 26px 58px 26px 26px;
+}
+
+.testimonial__even {
+  background-color: #e3d5b8;
+}
+
+.testimonial__comment {
+  color: #161616;
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  margin: 0 0 15px 0;
+}
+
+.testimonial__user {
+  color: #d03958;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+}
+
+.testimonials__user-pic {
+  border-radius: 50%;
+  box-shadow: 0 -5px 16px rgba(184, 172, 147, 0.75);
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  top: 19px;
+  right: -47px;
+}
+
+.gallery {
+  text-align: center;
+  padding: 0 0 26px 0;
+}
+
+.gallery__title {
+  color: #d03958;
+}
+
+.gallery__album {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 388px;
+  margin: 40px 0 0 0;
+}
+
+.gallery__photo {
+  margin: 0 0 35px 0;
+}
+
+.gallery__more-pictures-link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 22px 0 0 0;
+  color: #d03958;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: -0.4px;
+}
+
+.footer {
+  background-color: #161616;
+  padding: 48px 0 48px 0;
+}
+
+.footer__in {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copyrights {
+  color: #ffffff;
+  font-family: "PT Serif";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  padding: 18px 0 0 0;
+}
+
+.footer__DesignCoon {
+  text-decoration: none;
+  color: #d03958;
+  letter-spacing: -0.4px;
+}
+
+.logo__bottom {
+  color: #d03958;
+  font-family: "Quite Chocolatey";
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 96px;
+  letter-spacing: -1.2px;
+}
+
+@media (max-width: 1024px) {
+  
+  .travel__in {
+    padding: 0;
+  }
+
+  .travel__logo-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .travel__nav-list {
+    padding: 0;
+  }
+
+  .travel-request {
+    flex-direction: column-reverse;
+  }
+
+  .travel__request-form {
+    margin: 0 auto;
+    top: 53px;
+  }
+
+  .travel__quote {
+    margin-bottom: 17px;
+  }
+
+  .travel__text {
+    padding: 0 105px 20px 105px;
+  }
+
+  .travel__is {
+    text-align: center;
+  }
+
+  .our-services__subtitle {
+    justify-content: center;
+    margin: 10px 0 10px 0;
+  }
+
+  .our-services__menu {
+    justify-content: space-around;
+  }
+
+  .our-story__container {
+    display: inline-block;
+    text-align: center;
+    padding: 31px 15px 28px 15px;
+  }
+
+  .our-story__button {
+    display: inline-block;
+    margin: 23px auto 0 auto;
+  }
+
+  .pricing {
+    padding-top: 10px;
+  }
+
+  .pricing__option {
+    margin: 0 auto;
+    padding: 29px 40px 0 40px;
+  }
+
+  .test-gal {
+    padding: 15px 0 0 0;
+    flex-direction: column;
+  }
+
+  .testimonial {
+    text-align: center;
+  }
+
+  .testimonials__blocks {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .gallery__album {
+    max-width: 768px;
+    margin: 20px 0 0 0;
+  }
+
+  .footer {
+    padding: 25px 0;
+  }
+
+  .footer__in {
+    display: block;
+    text-align: center;
+  }
+
+  .travel__logo {
+    display: block;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .travel__logo {
+    line-height: 102px;
+  }
+
+  .travel__nav-list {
+    display: block;
+  }
+
+  .travel__nav-button {
+    text-align: center;
+    margin: 0 0 5px 0;
+  }
+
+  .travel__button-link {
+    padding: 3px 15px;
+  }
+
+  .travel__request-form {
+    top: 10px;
+    padding: 10px 0 10px 0;
+  }
+
+  .travel__quote {
+    margin-bottom: 4px;
+  }
+
+  .travel__input {
+    margin: 0 12px 12px 12px;
+  }
+
+  .travel__label {
+    padding: 0;
+    margin: 0;
+  }
+
+  .travel__form {
+    width: 320px;
+    padding: 0px 10px;
+  }
+
+  .travel__title {
+    font-size: 55px;
+    line-height: 60px;
+    margin: 40px 0 0 0;
+  }
+
+  .travel__text {
+    padding: 0px 40px 10px 40px;
+    margin: 12px 0 0 0;
+  }
+
+  .our-services {
+    padding: 15px 0;
+  }
+
+  .our-services__subtitle {
+    justify-content: center;
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .our-services__subtile-text {
+    font-size: 55px;
+    line-height: 60px;
+    margin: 0;
+  }
+
+  .our-services__menu {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 15px;
+  }
+
+  .pricing__title {
+    font-size: 55px;
+    line-height: 60px;
+    margin: 0 0 9px 0;
+  }
+
+  .pricing__options {
+    display: block;
+  }
+
+  .pricing__option {
+    margin: 0 auto;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: 1px dotted;
+  }
+
+  .pricing__button {
+    border-radius: 5px;
+  }
+
+  .test-gal {
+    padding: 15px 3px 0 3px;
+  }
+
+  .gallery {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .footer {
+    padding: 15px 0 0 0;
+  }
+
+  .footer__in {
+    padding: 0 3px;
+  }
+}
