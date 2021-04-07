@@ -654,6 +654,7 @@ body {
   .travel__request-form {
     top: 10px;
     padding: 10px 0 10px 0;
+    max-width: 20rem;
   }
 
   .travel__quote {
@@ -661,7 +662,11 @@ body {
   }
 
   .travel__input {
-    margin: 0 12px 12px 12px;
+    margin: 0 12px 12px 7px;
+  }
+
+  .travel__checkbox{
+    margin-left: 1rem;
   }
 
   .travel__label {
@@ -670,7 +675,7 @@ body {
   }
 
   .travel__form {
-    width: 320px;
+    width: 19rem;
     padding: 0px 10px;
   }
 
@@ -707,7 +712,9 @@ body {
     flex-wrap: wrap;
     padding-top: 15px;
   }
-
+  .our-services__card{
+    margin: 0 0 1rem 0;
+}
   .pricing__title {
     font-size: 55px;
     line-height: 60px;
@@ -732,7 +739,9 @@ body {
   .test-gal {
     padding: 15px 3px 0 3px;
   }
-
+  .subtitle{
+    font-size: 40px;
+  }
   .gallery {
     max-width: 360px;
     margin: 0 auto;
