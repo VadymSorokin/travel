@@ -180,8 +180,10 @@ body {
 .travel__checkbox-true {
     position: absolute;
     opacity: 0;
-    top: 0;
-    left: -31px;
+    top: 1px;
+    left: -29px;
+    width: 20px;
+    height: 20px;
     z-index: 1;
     cursor: pointer;
 }
